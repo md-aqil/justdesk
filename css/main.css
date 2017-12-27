@@ -131,3 +131,189 @@ background: #fff;
 	width: 130px;
     margin-top: 32px;
 }
+
+
+
+.quote {
+    color: rgba(0,0,0,.1);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/*-------------------------------*/
+/*    Carousel Fade Transition   */
+/*-------------------------------*/
+
+#fade-quote-carousel.carousel {
+  padding-bottom: 60px;
+}
+
+#fade-quote-carousel.carousel .carousel-indicators {
+  bottom: 10px;
+      left: 193px;
+}
+#fade-quote-carousel.carousel .carousel-indicators > li {
+    background-color: #c5c5c5;
+    border: none;
+    width: 50px;
+    height: 3px;
+}
+#fade-quote-carousel.carousel .carousel-indicators > li.active {
+	background: var(--theme-color);
+}
+
+#fade-quote-carousel blockquote {
+    border: none;
+    padding: 0;
+}
+#fade-quote-carousel .profile-circle {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 100px;
+}
+#fade-quote-carousel .profile-circle img {
+	width: 100%;
+}
+.read {
+	    font-size: 19px;
+    color: #333;
+}
+.border-right {
+	border-right: 2px solid var(--theme-color);
+}
+
+.media-middle .media-body,.media-middle  .media-left,.media-middle  .media-right {
+    display: table-cell;
+    vertical-align: middle;
+}
+.text-widget.left:before {
+		left: 0;
+     margin-left: 0px; 
+}
+.whyjustdesk-col .media {
+	margin-bottom: 30px;
+}
+
+.whyjustdesk-col .media-heading{
+	font-weight: 400;
+
+}
+.virticle-line {
+	width: 2px;
+    height: 500px;
+    background:  var(--theme-color);
+    margin: 0 auto;
+}
+.bg-theme-color {
+	background: var(--theme-color);
+}
+/*matrial input ===========================*/
+
+/* form starting stylings ------------------------------- */
+:root {
+	--bar-color: #fff;
+}
+.material-form .form-control 				{
+ border:none;
+ box-shadow: none;
+ border-radius: 0;
+  border-bottom:2px solid #fff;
+  background: none;
+      color: #fff;
+    font-size: 18px;
+}
+
+
+/* LABEL ======================================= */
+.material-form label 				 {
+  color:#fff; 
+  font-size:20px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  top:-6px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+  font-weight: 300;
+}
+.material-form .form-group  {
+	position: relative;
+	margin-bottom: 70px;
+}
+/* active state */
+.material-form .form-control:focus ~ label{
+  top:-30px;
+  font-size:14px;
+  color: var(--bar-color);
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:100%; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:3px; 
+  width:0;
+  bottom:0px; 
+  position:absolute;
+  background: var(--bar-color); 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+.material-form .form-control:focus ~ .bar:before, .material-form .form-control:focus ~ .bar:after {
+  width:50%;
+}
+.material-form .form-control::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+.material-form .form-control:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background: var(--bar-color); }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background: var(--bar-color); }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background: var(--bar-color); }
+  to 	{ width:0; background:transparent; }
+}
+.theme-btn {
+	padding: 10px 50px;
+    border-radius: 30px;
+    background: #fff;
+    color: var(--theme-color);
+    font-size: 20px;
+}
