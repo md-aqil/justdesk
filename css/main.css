@@ -317,3 +317,25 @@ background: #fff;
     color: var(--theme-color);
     font-size: 20px;
 }
+.justdesk-footer ul {
+	list-style: none;
+	padding: 0;
+	margin-top: -20px;
+}
+.justdesk-footer ul a {
+	color: #333;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+    font-weight: 400;
+}
+.justdesk-footer ul a:hover {
+	color: var(--theme-color);
+}
+.footer-social img{
+	width: 45px;
+}
+.width100 {
+  width: 100%;
+}
