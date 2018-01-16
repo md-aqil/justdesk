@@ -2,403 +2,329 @@
 <html>
 <head>
 	<title>JustDesk</title>
+<link rel="stylesheet" href="css/animate.css">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/main.css">
+<style>
+	.side-navigation.fixed {
+    position: fixed;
+    top: 0;
+        width: 160px;
+        margin-top: 50px;
+}
+.text-widget {
+	margin-bottom: 30px;
+}
+.facilities-icons-list img {
+	    width: 35px;
+    margin-right: 5px;
+    margin-top: -10px;
+}
+.facilities-icons-list li{
+	--size: 20px;
+	font-size: 20px;
+	color: #777;
+	padding-left: var(--size);
+	padding-right: var(--size);
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+</style>
 </head>
 <body>
-	<div class="search-page-nav">
-		<nav class="navbar navbar-default">
-			<div class="container">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-sample" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<h4><a class="navbar-brand" href="#" >Brand</a></h4>
-				</div>
-			  <div class="col-md-5">
-				        <form class="navbar-form" role="search">
-					        <div class="input-group find-office-input width100">
-		        			  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-		        			  <span class="input-group-addon" id="basic-addon1">Search</span>
-		        			</div>
-				        </form>
-   				 </div>
-					
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="navbar-sample">
-				
-					<ul class="nav navbar-nav navbar-right">
+	
 
-						<li><a href="#">Post Requirement</a></li>
-						<li><a href="#">Add Workplace</a></li>
-						<button type="button" class="btn btn-default navbar-btn">Sign in</button>
-					</ul>
-				</div>
-				
-			</div>
-		</nav>
-	</div>
+  <header class="site-header">
+     <div class="search-page-nav">
+     	<nav class="navbar navbar-default nav-theme-color text-white">
+     				<div class="container">
+     					<!-- Brand and toggle get grouped for better mobile display -->
+     					<div class="navbar-header">
+     						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-sample" aria-expanded="false">
+     							<span class="sr-only">Toggle navigation</span>
+     							<span class="icon-bar"></span>
+     							<span class="icon-bar"></span>
+     							<span class="icon-bar"></span>
+     						</button>
+     						<h4><a class="navbar-brand" href="#">Brand</a></h4>
+     					</div>
+     				  <div class="col-md-6">
+     				        <form class="navbar-form" role="search">
+     				        	<div class="result-input-box">
+     						        <div class="input-group">
+     						        	 <span class="input-group-addon" id="basic-addon1">
+     			        			  	<select name="" id="" style="display: none;">
+     			        			  		<option value="">Select City</option>
+     			        			  		<option value="">Delhi</option>
+     			        			  	</select><div class="ui-select"><span>Select City</span><ul><li class="selected" style="transition-delay: 0ms;">Select City</li><li style="transition-delay: 100ms;">Delhi</li></ul></div>
+     			        			  </span>
 
-<div class="container spacethis">
-	<h4 class="text-widget text-center">Our Features</h4>
-	<div class="row text-center">
-		<div class="col-md-4">
-			<div class="f-box">
-				<div class="f-icon-box">
-					<img src="img/id-card.svg" alt="">
-				</div>
-				<h3>The Feature</h3>
-				<p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="f-box">
-				<div class="f-icon-box">
-					<img src="img/id-card.svg" alt="">
-				</div>
-				<h3>The Feature</h3>
-				<p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="f-box">
-				<div class="f-icon-box">
-					<img src="img/id-card.svg" alt="">
-				</div>
-				<h3>The Feature</h3>
-				<p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="f-box">
-				<div class="f-icon-box">
-					<img src="img/id-card.svg" alt="">
-				</div>
-				<h3>The Feature</h3>
-				<p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="f-box">
-				<div class="f-icon-box">
-					<img src="img/id-card.svg" alt="">
-				</div>
-				<h3>The Feature</h3>
-				<p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="f-box">
-				<div class="f-icon-box">
-					<img src="img/id-card.svg" alt="">
-				</div>
-				<h3>The Feature</h3>
-				<p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-			</div>
-		</div>
-	</div>
-</div>
+     			        			  <input type="text" class="" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+     			        			  <button class="btn-search"><img width="25" src="img/search.svg" alt=""></button>
+     			        			</div>
+     				        	</div>
+     					      
+     				        </form>
+     	   				 </div>
+     						
+     					<!-- Collect the nav links, forms, and other content for toggling -->
+     					<div class="collapse navbar-collapse" id="navbar-sample">
+     					
+     						<ul class="nav navbar-nav navbar-right">
 
-<div class="container-fluid bg-gray">
-	<div class="row">
-		<div class="container spacethis">
-	<h4 class="text-widget text-center">Popular Locations</h4>
-	<div class="row text-center icon-big-box">
-		<div class="col-md-4">
-			<div class="f-box">
-				<div class="f-icon-box">
-					<img src="img/gate-of-india.svg" alt="">
-				</div>
-				<h3>Delhi NCR</h3>
-			</div>
-		</div>
-			<div class="col-md-4">
-			<div class="f-box">
-				<div class="f-icon-box">
-					<img src="img/gate-of-india.svg" alt="">
-				</div>
-				<h3>Delhi NCR</h3>
-			</div>
-		</div>
-			<div class="col-md-4">
-			<div class="f-box">
-				<div class="f-icon-box">
-					<img src="img/gate-of-india.svg" alt="">
-				</div>
-				<h3>Delhi NCR</h3>
-			</div>
-		</div>
-			<div class="col-md-4">
-			<div class="f-box">
-				<div class="f-icon-box">
-					<img src="img/gate-of-india.svg" alt="">
-				</div>
-				<h3>Delhi NCR</h3>
-			</div>
-		</div>
-			<div class="col-md-4">
-			<div class="f-box">
-				<div class="f-icon-box">
-					<img src="img/gate-of-india.svg" alt="">
-				</div>
-				<h3>Delhi NCR</h3>
-			</div>
-		</div>
-			<div class="col-md-4">
-			<div class="f-box">
-				<div class="f-icon-box">
-					<img src="img/gate-of-india.svg" alt="">
-				</div>
-				<h3>Delhi NCR</h3>
-			</div>
-		</div>
+     							<li><a href="#">Post Requirement</a></li>
+     							<li><a href="#">Add Workplace</a></li>
+     							<button type="button" class="btn btn-transparent navbar-btn">Sign in</button>
+     						</ul>
+     					</div>
+     					
+     				</div>
+     	</nav>
+     </div>
 
-		
-	</div>
-</div>
-	</div>
-</div>
-<div class="container spacethis">
-	<div class="col-md-5">
-		<h4 class="text-widget left">User Testimonials</h4>
-		<section id="carousel">    				
-			<div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>
-			<div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
-			  <!-- Carousel indicators -->
-              <ol class="carousel-indicators">
-			    <li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
-			    <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
-			    <li data-target="#fade-quote-carousel" data-slide-to="2" ></li>
-              
-			  </ol>
-			  <!-- Carousel items -->
-			  <div class="carousel-inner">
-			    	<div class="item active">
-				    	<blockquote >
-				    		<p class="read">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-				    	</blockquote>	
-		    			<br>
-		    			  <div class="media">
-		    			    <div class="media-left">
-		    			     <div class="profile-circle">
-			                        	<img class="img-circle" src="img/aqil.jpg" alt="">
-			                        </div>
-		    			    </div>
-		    			    <div class="media-body">
-		    			      <h3 class="media-heading">Media heading</h3>
-		    			      <p class="lead">CEO, Pvt. Ltd</p>
-		    			    </div>
-		    		 </div>
-			        </div>
-			        <div class="item">
-				    	<blockquote >
-				    		<p class="read">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-				    	</blockquote>	
-		    			<br>
-		    			  <div class="media">
-		    			    <div class="media-left">
-		    			     <div class="profile-circle">
-			                        	<img class="img-circle" src="img/aqil.jpg" alt="">
-			                        </div>
-		    			    </div>
-		    			    <div class="media-body">
-		    			      <h3 class="media-heading">Media heading</h3>
-		    			      <p class="lead">CEO, Pvt. Ltd</p>
-		    			    </div>
-		    		 </div>
-			        </div>
-			        <div class="item">
-				    	<blockquote >
-				    		<p class="read">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-				    	</blockquote>	
-		    			<br>
-		    			  <div class="media">
-		    			    <div class="media-left">
-		    			     <div class="profile-circle">
-			                        	<img class="img-circle" src="img/aqil.jpg" alt="">
-			                        </div>
-		    			    </div>
-		    			    <div class="media-body">
-		    			      <h3 class="media-heading">Media heading</h3>
-		    			      <p class="lead">CEO, Pvt. Ltd</p>
-		    			    </div>
-		    		 </div>
-			        </div>
-			  </div>
-			</div>
-		</section>
-	</div>
-	<div class="col-md-2">
-		<div class="virticle-line"></div>
-	</div>
-	<div class="col-md-5 whyjustdesk-col">
-		<h4 class="text-widget left">Why justDesk</h4>
+   <div id="carousel-example" class="carousel slide full-width" data-ride="carousel">
+	       <ol class="carousel-indicators">
+	         <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+	         <li data-target="#carousel-example" data-slide-to="1"></li>
+	         <li data-target="#carousel-example" data-slide-to="2"></li>
+	       </ol>
 
-				<ul class="media-list media-middle">
-				  <li class="media">
-				    <div class="media-left">
-				      <a href="#">
-				        <img class="media-object" src="img/id-card.svg" width="50" alt="...">
-				      </a>
-				    </div>
-				    <div class="media-body">
-				      <h3 class="media-heading">Media heading</h3>
-				     
-				    </div>
-				  </li>
-				   <li class="media">
-				    <div class="media-left">
-				      <a href="#">
-				        <img class="media-object" src="img/id-card.svg" width="50" alt="...">
-				      </a>
-				    </div>
-				    <div class="media-body">
-				      <h3 class="media-heading">Media heading</h3>
-				     
-				    </div>
-				  </li>
-				   <li class="media">
-				    <div class="media-left">
-				      <a href="#">
-				        <img class="media-object" src="img/id-card.svg" width="50" alt="...">
-				      </a>
-				    </div>
-				    <div class="media-body">
-				      <h3 class="media-heading">Media heading</h3>
-				     
-				    </div>
-				  </li>
-				   <li class="media">
-				    <div class="media-left">
-				      <a href="#">
-				        <img class="media-object" src="img/id-card.svg" width="50" alt="...">
-				      </a>
-				    </div>
-				    <div class="media-body">
-				      <h3 class="media-heading">Media heading</h3>
-				     
-				    </div>
-				  </li>
-				   <li class="media">
-				    <div class="media-left">
-				      <a href="#">
-				        <img class="media-object" src="img/id-card.svg" width="50" alt="...">
-				      </a>
-				    </div>
-				    <div class="media-body">
-				      <h3 class="media-heading">Media heading</h3>
-				     
-				    </div>
-				  </li>
-				</ul>
-		
-	</div>
-</div>
+	       <div class="carousel-inner">
+	         <div class="item active">
+	           <a href="#"><img src="img/space-desk-workspace-coworking.jpg" /></a>
+	           <div class="carousel-caption">
+	             <h3>Meow</h3>
+	             <p>Just Kitten Around</p>
+	           </div>
+	         </div>
+	         <div class="item">
+	           <a href="#"><img src="img/space-desk-workspace-coworking.jpg" /></a>
+	           <div class="carousel-caption">
+	             <h3>Meow</h3>
+	             <p>Just Kitten Around</p>
+	           </div>
+	         </div>
+	         <div class="item">
+	           <a href="#"><img src="img/space-desk-workspace-coworking.jpg" /></a>
+	           <div class="carousel-caption">
+	             <h3>Meow</h3>
+	             <p>Just Kitten Around</p>
+	           </div>
+	         </div>
+	       </div>
 
-<div class="container-fluid bg-theme-color">
-	<div class="row">
-		<div class="container spacethis">
-			<div class="col-md-8 col-md-offset-2">
-			
-				  <form class="material-form">
-				    
-				    <div class="form-group">      
-				      <input class="form-control" type="text" required>
-				      <span class="highlight"></span>
-				      <span class="bar"></span>
-				      <label>Name</label>
-				    </div>
-				      <div class="form-group">      
-				      <input class="form-control" type="text" required>
-				      <span class="highlight"></span>
-				      <span class="bar"></span>
-				      <label>Email</label>
-				    </div>
-				        <div class="form-group">      
-				      <input class="form-control" type="text" required>
-				      <span class="highlight"></span>
-				      <span class="bar"></span>
-				      <label>Phone Number</label>
-				    </div>
-				        <div class="form-group">      
-				       <textarea class="form-control" type="text" name="" id=""  rows="1" ></textarea>
-				      <span class="highlight"></span>
-				      <span class="bar"></span>
-				      <label>Your Requirements</label>
-				    </div>
-				    <div class="pull-right">
-				    <button class="btn theme-btn">SUBMIT</button>
-				    	
-				    </div>
-				  </form>
-				      
-				
-			</div>
-		</div>
-	</div>
-</div>
-<div class="container-fluid bg-gray spacethis">
-	<div class="row">
-		<div class="container">
-			<footer class="row justdesk-footer">
-				<div class="col-md-3">
-					<h4 class="text-widget left">Workplace Type</h4>
-						<ul>
-							<li><a href="">Meeting Room</a></li>
-							<li><a href="">Private Office</a></li>
-							<li><a href="">Co-working Space</a></li>
-							<li><a href="">Virtual Office</a></li>
-							<li><a href="">Co-working</a></li>
-							<li><a href="">Cafes</a></li>
-							<li><a href="">Training</a></li>
-						</ul>
-				</div>
-				<div class="col-md-3">
-					<h4 class="text-widget left">Top Citites</h4>
-						<ul>
-							<li><a href="">Meeting Room</a></li>
-							<li><a href="">Private Office</a></li>
-							<li><a href="">Co-working Space</a></li>
-							<li><a href="">Virtual Office</a></li>
-							<li><a href="">Co-working</a></li>
-							<li><a href="">Cafes</a></li>
-							<li><a href="">Training</a></li>
-						</ul>
-				</div>
-				<div class="col-md-3">
-					<h4 class="text-widget left">Explore</h4>
-						<ul>
-							<li><a href="">Meeting Room</a></li>
-							<li><a href="">Private Office</a></li>
-							<li><a href="">Co-working Space</a></li>
-							<li><a href="">Virtual Office</a></li>
-							<li><a href="">Co-working</a></li>
-							<li><a href="">Cafes</a></li>
-							<li><a href="">Training</a></li>
-						</ul>
-				</div>
-				<div class="col-md-3">
-					<ul class="list-inline footer-social">
+	       <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+	        <span class="angle-icon">
+	         	<img class="left" src="img/angle.svg" alt="">
+	         </span>
+	       </a>
+	       <a class="right carousel-control" href="#carousel-example" data-slide="next">
+	         <span class="angle-icon">
+	         	<img class="right" src="img/angle.svg" alt="">
+	         </span>
+	       </a>
+    </div>
+   <div class="bottom-slider-panel bg-gray">
+   	<div class="container">
+   		<div class="row">
+   			<div class="col-md-5">
+   				<h2 class="m0">Workplace Co-working space</h2>
+   			</div>
+   			<div class="col-md-7 text-right text-theme">
+   				<ul class="list-inline spi">
+		   			<li>Rs 1000/per day</li><i>|</i>
+		   			<li>Rs 1000/per month</li>
+		   		</ul>
+		   		<ul class="list-inline footer-social top-banner">
 						<li><a href=""><img src="img/facebook (1).svg" alt=""></a></li>
 						<li><a href=""><img src="img/instagram.svg" alt=""></a></li>
 						<li><a href=""><img src="img/linkedin.svg" alt=""></a></li>
 						<li><a href=""><img src="img/twitter (1).svg" alt=""></a></li>
 					</ul>
-					<p class="lead">All Rights Reserved</p>
-					
-					
-					
-				</div>
-			</footer>
-		</div>
-	</div>
-</div>
+   			</div>
+   		</div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   		<ul class="list-inline spi fup">
+   			<li>Parkash Nagar, Delhi India </li><i>|</i>
+   			<li>Type: Meeting and Working Place </li><i>|</i>
+   			<li>Capacity: 20 People</li>
+   		</ul>
+   	</div>
+   </div>	
+ </header>
+
+
+	<div class="content-area container">
+		<div class="row">
+			<div class="col-md-2">
+	        <aside class="sidebar-area" role="complementary">
+	            <nav class="side-navigation" role="navigation">
+	             <div class="m1 menu">
+	                 <div id="menu-center">
+	                     <ul>
+	                         <li><a class="active" href="#description">Description</a>
+
+	                         </li>
+	                         <li><a href="#facilities">Facilities</a>
+
+	                         </li>
+	                         <li><a href="#about">Timming</a>
+
+	                         </li>
+	                         <li><a href="#contact">Gallery</a></li>
+	                         <li><a href="#contact">Location</a></li>
+
+	                     </ul>
+	                 </div>
+	             </div>
+	            </nav><!-- #site-navigation -->
+	        </aside><!-- #secondary -->
+	        </div>
+	        <div class="col-md-10">
+	        	<main class="site-main" role="main">
+	       			
+	       			<article class="art-block" id="description" class="">
+	       				<h4 class="text-widget left">Description</h4>
+	       				<p class="read">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+	       			</article>
+
+	       			<article id="facilities" class="art-block">
+	       				<h4 class="text-widget left">Facilities</h4>
+	       				<ul class="facilities-icons-list list-inline">
+						      	<li>
+						      		<img src="img/wifi.svg" alt="">
+						      		Power Backup
+						      	</li>
+						      	<li>
+						      		<img src="img/plug.svg" alt="">
+						      		Wi-fi
+						      	</li>
+						      	<li>
+						      		<img src="img/wifi.svg" alt="">
+						      		Power Backup
+						      	</li>
+						      	
+
+						      	<li>
+						      		<img src="img/coffee-cup.svg" alt="">
+						      		Coffee
+						      	</li>
+						      	<li>
+						      		<img src="img/armchair.svg" alt="">
+						      		Lounge
+						      	</li>
+						      	<li>
+						      		<img src="img/wifi.svg" alt="">
+						      		Wifi
+						      	</li>
+						      		<li>
+						      		<img src="img/coffee-cup.svg" alt="">
+						      		Coffee
+						      	</li>
+						      	<li>
+						      		<img src="img/coffee-cup.svg" alt="">
+						      		Coffee
+						      	</li>
+						      	<li>
+						      		<img src="img/coffee-cup.svg" alt="">
+						      		Coffee
+						      	</li>
+						      	<li>
+						      		<img src="img/coffee-cup.svg" alt="">
+						      		Coffee
+						      	</li>
+						      	<li>
+						      		<img src="img/armchair.svg" alt="">
+						      		Lounge
+						      	</li>
+						      
+						      </ul>
+	       			</article>
+
+	       			<div id="about">
+	       				<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quasi, rerum recusandae excepturi dolore nam, consectetur eaque deserunt facere, quis, voluptatum ut aperiam amet minima unde natus molestiae placeat doloremque.</h1>
+	       				<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quasi, rerum recusandae excepturi dolore nam, consectetur eaque deserunt facere, quis, voluptatum ut aperiam amet minima unde natus molestiae placeat doloremque.</h1>
+	       				<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quasi, rerum recusandae excepturi dolore nam, consectetur eaque deserunt facere, quis, voluptatum ut aperiam amet minima unde natus molestiae placeat doloremque.</h1>
+	       				<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quasi, rerum recusandae excepturi dolore nam, consectetur eaque deserunt facere, quis, voluptatum ut aperiam amet minima unde natus molestiae placeat doloremque.</h1>
+	       			</div>
+	       			<div id="contact">
+	       				<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quasi, rerum recusandae excepturi dolore nam, consectetur eaque deserunt facere, quis, voluptatum ut aperiam amet minima unde natus molestiae placeat doloremque.</h1>
+	       				<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quasi, rerum recusandae excepturi dolore nam, consectetur eaque deserunt facere, quis, voluptatum ut aperiam amet minima unde natus molestiae placeat doloremque.</h1>
+	       				<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quasi, rerum recusandae excepturi dolore nam, consectetur eaque deserunt facere, quis, voluptatum ut aperiam amet minima unde natus molestiae placeat doloremque.</h1>
+	       				<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quasi, rerum recusandae excepturi dolore nam, consectetur eaque deserunt facere, quis, voluptatum ut aperiam amet minima unde natus molestiae placeat doloremque.</h1>
+	       			</div>
+	        	</main>
+	        </div>
+	   
+	        </div>
+	    </div>
+
+
+
+    <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script>
+
+	$(window).scroll(function () {
+		var fixSidebar = $('.site-header').innerHeight();
+		var contentHeight = $('.site-main').innerHeight();
+		var sidebarHeight = $('.side-navigation').height();
+	  var sidebarBottomPos = contentHeight - sidebarHeight; 
+	  var trigger = $(window).scrollTop() - fixSidebar;
+
+	      	if ($(window).scrollTop() >= fixSidebar) {
+	          	$('.side-navigation').addClass('fixed animated fadeInDown');
+	      	} else {
+	          	$('.side-navigation').removeClass('fixed animated fadeInDown');
+	      	}
+
+	      	if (trigger >= sidebarBottomPos) {
+	          	$('.side-navigation').addClass('bottom');
+	      	} else {
+	          	$('.side-navigation').removeClass('bottom');
+	      	}
+	});
+</script>
+<script>
+	$(document).ready(function () {
+	    $(document).on("scroll", onScroll);
+	    
+	    //smoothscroll
+	    $('a[href^="#"]').on('click', function (e) {
+	        e.preventDefault();
+	        $(document).off("scroll");
+	        
+	        $('a').each(function () {
+	            $(this).removeClass('active');
+	        })
+	        $(this).addClass('active');
+	      
+	        var target = this.hash,
+	            menu = target;
+	        $target = $(target);
+	        $('html, body').stop().animate({
+	            'scrollTop': $target.offset().top+2
+	        }, 500, 'swing', function () {
+	            window.location.hash = target;
+	            $(document).on("scroll", onScroll);
+	        });
+	    });
+	});
+
+	function onScroll(event){
+	    var scrollPos = $(document).scrollTop();
+	    $('#menu-center a').each(function () {
+	        var currLink = $(this);
+	        var refElement = $(currLink.attr("href"));
+	        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+	            $('#menu-center ul li a').removeClass("active");
+	            currLink.addClass("active");
+	        }
+	        else{
+	            currLink.removeClass("active");
+	        }
+	    });
+	}
+</script>
 </body>
 </html>
