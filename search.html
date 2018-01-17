@@ -2,329 +2,413 @@
 <html>
 <head>
 	<title>JustDesk</title>
-<link rel="stylesheet" href="css/animate.css">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/main.css">
-<style>
-	.side-navigation.fixed {
-    position: fixed;
-    top: 0;
-        width: 160px;
-        margin-top: 50px;
-}
-.text-widget {
-	margin-bottom: 30px;
-}
-.facilities-icons-list img {
-	    width: 35px;
-    margin-right: 5px;
-    margin-top: -10px;
-}
-.facilities-icons-list li{
-	--size: 20px;
-	font-size: 20px;
-	color: #777;
-	padding-left: var(--size);
-	padding-right: var(--size);
-	margin-top: 30px;
-	margin-bottom: 30px;
-}
-</style>
 </head>
 <body>
-	
+	<div class="search-page-nav">
+		<nav class="navbar navbar-default nav-theme-color text-white">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-sample" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<h4><a class="navbar-brand" href="#" >Brand</a></h4>
+				</div>
+			  <div class="col-md-6">
+			        <form class="navbar-form" role="search">
+			        	<div class="result-input-box">
+					        <div class="input-group">
+					        	 <span class="input-group-addon" id="basic-addon1">
+		        			  	<select name="" id="" >
+		        			  		<option value="">Select City</option>
+		        			  		<option value="">Delhi</option>
+		        			  	</select>
+		        			  </span>
 
-  <header class="site-header">
-     <div class="search-page-nav">
-     	<nav class="navbar navbar-default nav-theme-color text-white">
-     				<div class="container">
-     					<!-- Brand and toggle get grouped for better mobile display -->
-     					<div class="navbar-header">
-     						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-sample" aria-expanded="false">
-     							<span class="sr-only">Toggle navigation</span>
-     							<span class="icon-bar"></span>
-     							<span class="icon-bar"></span>
-     							<span class="icon-bar"></span>
-     						</button>
-     						<h4><a class="navbar-brand" href="#">Brand</a></h4>
-     					</div>
-     				  <div class="col-md-6">
-     				        <form class="navbar-form" role="search">
-     				        	<div class="result-input-box">
-     						        <div class="input-group">
-     						        	 <span class="input-group-addon" id="basic-addon1">
-     			        			  	<select name="" id="" style="display: none;">
-     			        			  		<option value="">Select City</option>
-     			        			  		<option value="">Delhi</option>
-     			        			  	</select><div class="ui-select"><span>Select City</span><ul><li class="selected" style="transition-delay: 0ms;">Select City</li><li style="transition-delay: 100ms;">Delhi</li></ul></div>
-     			        			  </span>
+		        			  <input type="text" class="" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+		        			  <button class="btn-search"><img width="25" src="img/search.svg" alt=""></button>
+		        			</div>
+			        	</div>
+				      
+			        </form>
+   				 </div>
+					
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="navbar-sample">
+				
+					<ul class="nav navbar-nav navbar-right">
 
-     			        			  <input type="text" class="" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-     			        			  <button class="btn-search"><img width="25" src="img/search.svg" alt=""></button>
-     			        			</div>
-     				        	</div>
-     					      
-     				        </form>
-     	   				 </div>
-     						
-     					<!-- Collect the nav links, forms, and other content for toggling -->
-     					<div class="collapse navbar-collapse" id="navbar-sample">
-     					
-     						<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">Post Requirement</a></li>
+						<li><a href="#">Add Workplace</a></li>
+						<button type="button" class="btn btn-transparent navbar-btn">Sign in</button>
+					</ul>
+				</div>
+				
+			</div>
+		</nav>
+	</div>
 
-     							<li><a href="#">Post Requirement</a></li>
-     							<li><a href="#">Add Workplace</a></li>
-     							<button type="button" class="btn btn-transparent navbar-btn">Sign in</button>
-     						</ul>
-     					</div>
-     					
-     				</div>
-     	</nav>
-     </div>
+	<div class="container spacethis" style="padding-top: 30px;">
+		<div class="row top-nav-filter">
+			<div class="col-md-3 part">
+				<h3>
+					<span>Filters</span>
+					<small class="small-info text-danger">Clear All</small>
+				</h3>
+			</div>
+			<div class="col-md-9">
+				<h3>
+						<span>Workspaces near you</span>
+						<small class="small-info text-muted">250 results Showing</small>
+					</h3>
+			</div>
+		</div>
 
-   <div id="carousel-example" class="carousel slide full-width" data-ride="carousel">
-	       <ol class="carousel-indicators">
-	         <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
-	         <li data-target="#carousel-example" data-slide-to="1"></li>
-	         <li data-target="#carousel-example" data-slide-to="2"></li>
-	       </ol>
+		<div class="row">
+			<aside class="col-md-3 br">
+				<div class="filter-parent-box">
+					<ul class="filter-list">
+						<li class="slider-dropdown">
+							<a href="#" class="toggle">Location</a> 
+							<ul class="slider-dropdown-menu">
+								<li>
+									 <div>
+								        <input id="checkbox-1" class="checkbox-custom" name="checkbox-1" type="checkbox">
+								        <label for="checkbox-1" class="checkbox-custom-label">First Choice</label>
+								      </div>
+								</li>
+								<li>
+									 <div>
+								        <input id="checkbox-2" class="checkbox-custom" name="checkbox-1" type="checkbox">
+								        <label for="checkbox-2" class="checkbox-custom-label">First Choice</label>
+								      </div>
+								</li>
+								<li>
+									 <div>
+								        <input id="checkbox-3" class="checkbox-custom" name="checkbox-1" type="checkbox">
+								        <label for="checkbox-3" class="checkbox-custom-label">First Choice</label>
+								      </div>
+								</li>
+								
+							</ul>
+						</li>
+						<li class="slider-dropdown">
+							<a href="#" class="toggle">Location</a> 
+							<ul class="slider-dropdown-menu">
+								<li>
+									<div>
+								        <input id="radio-3" class="radio-custom" name="radio-group" type="radio">
+           								 <label for="radio-3" class="radio-custom-label">Third Choice</label>
+								      </div>
+								</li>
+								<li>
+									<div>
+								        <input id="radio-2" class="radio-custom" name="radio-group" type="radio">
+           								 <label for="radio-2" class="radio-custom-label">Third Choice</label>
+								      </div>
+								</li>
+								<li>
+									<div>
+								        <input id="radio-1" class="radio-custom" name="radio-group" type="radio">
+           								 <label for="radio-1" class="radio-custom-label">Third Choice</label>
+								      </div>
+								</li>
+								<a href="" class="clear-btn">Clear</a>
+							</ul>
+						</li>
+						<li class="slider-dropdown">
+							<a href="#" class="toggle">Location</a> 
+							<ul class="slider-dropdown-menu">
+								<li>hello wrold</li>
+								<li>hello wrold</li>
+								<li>hello wrold</li>
+								<li>hello wrold</li>
+							</ul>
+						</li><li class="slider-dropdown">
+							<a href="#" class="toggle">Location</a> 
+							<ul class="slider-dropdown-menu">
+								<li>hello wrold</li>
+								<li>hello wrold</li>
+								<li>hello wrold</li>
+								<li>hello wrold</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</aside>
 
-	       <div class="carousel-inner">
-	         <div class="item active">
-	           <a href="#"><img src="img/space-desk-workspace-coworking.jpg" /></a>
-	           <div class="carousel-caption">
-	             <h3>Meow</h3>
-	             <p>Just Kitten Around</p>
-	           </div>
-	         </div>
-	         <div class="item">
-	           <a href="#"><img src="img/space-desk-workspace-coworking.jpg" /></a>
-	           <div class="carousel-caption">
-	             <h3>Meow</h3>
-	             <p>Just Kitten Around</p>
-	           </div>
-	         </div>
-	         <div class="item">
-	           <a href="#"><img src="img/space-desk-workspace-coworking.jpg" /></a>
-	           <div class="carousel-caption">
-	             <h3>Meow</h3>
-	             <p>Just Kitten Around</p>
-	           </div>
-	         </div>
-	       </div>
+			<section class="col-md-9 pr0">
+				<ul class="media-list co-list">
+				   <li class="media">
+					    <div class="media-left">
+					      <a href="#">
+					        <img class="media-object" src="img/space-desk-workspace-coworking.jpg" alt="...">
+					      </a>
+					    </div>
+					    <div class="media-body">
+					    	<nav>
+							      <h3 class="media-heading"> <a href="results.html">Co-Working Space in Myur Vihar </a>
+							      	<small class="text-muted avail-info">
+							      	20 Seat Available
+							      </small> </h3>
+					    		<div class="stage">
+									  <div class="heart"></div>
+								</div>
+					    	</nav>
+					      	<p class="location">Mayur Vihar, Delhi India</p>
+					      	<p class="price">Rs 1000/per day </p>
+						     <ul class="day-info list-inline">
+						      	<li>
+						      		<span class="day">Mo</span>
+						      	</li>
+						      	<li>
+						      		<span class="day">Tu</span>
+						      	</li>
+						      	<li>
+						      		<span class="day">We</span>
+						      	</li>
+						      	<li>
+						      		<span class="day">Th</span>
+						      	</li>
+						      	<li>
+						      		<span class="day">Fr</span>
+						      	</li>
+						      	<li>
+						      		<span class="day">Sa</span>
+						      	</li>
+						      	<li>
+						      		<span class="day off">Su</span>
+						      	</li>
+						      </ul>
+						        <ul class="day-facility day-info list-inline">
+						      	<li>
+						      		<img src="img/wifi.svg" alt="">
+						      	</li>
+						      	<li>
+						      		<img src="img/plug.svg" alt="">
+						      	</li>
+						      	<li>
+						      		<img src="img/coffee-cup.svg" alt="">
+						      	</li>
+						      	<li>
+						      		<img src="img/armchair.svg" alt="">
+						      	</li>
+						      	<li>
+						      		<img src="img/wifi.svg" alt="">
+						      	</li>
+						      	<li>
+						      		<img src="img/coffee-cup.svg" alt="">
+						      	</li>
+						      	<li>
+						      		<div class="day off plus">+4</div>
+						      	</li>
+						      	<li class="pull-right">
+						      		<button class="btn btn-theme btn-round ">Book Now</button>
+						      	</li>
+						      	<li class="pull-right">
+						      		<button class="btn btn-theme btn-round btn-dark">Visit First</button>
+						      	</li>
+						      	
+						      </ul>
+					    </div>
+				   </li>
+				      <li class="media">
+				   	    <div class="media-left">
+				   	      <a href="#">
+				   	        <img class="media-object" src="img/space-desk-workspace-coworking.jpg" alt="...">
+				   	      </a>
+				   	    </div>
+				   	    <div class="media-body">
+				   	    	<nav>
+				   			      <h3 class="media-heading">Co-Working Space in Myur Vihar 
+				   			      	<small class="text-muted avail-info">
+				   			      	20 Seat Available
+				   			      </small> </h3>
+				   	    		<div class="stage">
+				   					  <div class="heart"></div>
+				   				</div>
+				   	    	</nav>
+				   	      	<p class="location">Mayur Vihar, Delhi India</p>
+				   	      	<p class="price">Rs 1000/per day </p>
+				   		     <ul class="day-info list-inline">
+				   		      	<li>
+				   		      		<span class="day">Mo</span>
+				   		      	</li>
+				   		      	<li>
+				   		      		<span class="day">Tu</span>
+				   		      	</li>
+				   		      	<li>
+				   		      		<span class="day">We</span>
+				   		      	</li>
+				   		      	<li>
+				   		      		<span class="day">Th</span>
+				   		      	</li>
+				   		      	<li>
+				   		      		<span class="day">Fr</span>
+				   		      	</li>
+				   		      	<li>
+				   		      		<span class="day">Sa</span>
+				   		      	</li>
+				   		      	<li>
+				   		      		<span class="day off">Su</span>
+				   		      	</li>
+				   		      </ul>
+				   		        <ul class="day-facility day-info list-inline">
+				   		      	<li>
+				   		      		<img src="img/wifi.svg" alt="">
+				   		      	</li>
+				   		      	<li>
+				   		      		<img src="img/plug.svg" alt="">
+				   		      	</li>
+				   		      	<li>
+				   		      		<img src="img/coffee-cup.svg" alt="">
+				   		      	</li>
+				   		      	<li>
+				   		      		<img src="img/armchair.svg" alt="">
+				   		      	</li>
+				   		      	<li>
+				   		      		<img src="img/wifi.svg" alt="">
+				   		      	</li>
+				   		      	<li>
+				   		      		<img src="img/coffee-cup.svg" alt="">
+				   		      	</li>
+				   		      	<li>
+				   		      		<div class="day off plus">+4</div>
+				   		      	</li>
+				   		      	<li class="pull-right">
+				   		      		<button class="btn btn-theme btn-round ">Book Now</button>
+				   		      	</li>
+				   		      	<li class="pull-right">
+				   		      		<button class="btn btn-theme btn-round btn-dark">Visit First</button>
+				   		      	</li>
+				   		      	
+				   		      </ul>
+				   	    </div>
+				      </li>
+				</ul>
+				
+			</section>
+		</div>
+	</div>
 
-	       <a class="left carousel-control" href="#carousel-example" data-slide="prev">
-	        <span class="angle-icon">
-	         	<img class="left" src="img/angle.svg" alt="">
-	         </span>
-	       </a>
-	       <a class="right carousel-control" href="#carousel-example" data-slide="next">
-	         <span class="angle-icon">
-	         	<img class="right" src="img/angle.svg" alt="">
-	         </span>
-	       </a>
-    </div>
-   <div class="bottom-slider-panel bg-gray">
-   	<div class="container">
-   		<div class="row">
-   			<div class="col-md-5">
-   				<h2 class="m0">Workplace Co-working space</h2>
-   			</div>
-   			<div class="col-md-7 text-right text-theme">
-   				<ul class="list-inline spi">
-		   			<li>Rs 1000/per day</li><i>|</i>
-		   			<li>Rs 1000/per month</li>
-		   		</ul>
-		   		<ul class="list-inline footer-social top-banner">
+<footer class="container-fluid bg-gray spacethis">
+	<div class="row">
+		<div class="container">
+			<footer class="row justdesk-footer">
+				<div class="col-md-3">
+					<h4 class="text-widget left">Workplace Type</h4>
+						<ul>
+							<li><a href="">Meeting Room</a></li>
+							<li><a href="">Private Office</a></li>
+							<li><a href="">Co-working Space</a></li>
+							<li><a href="">Virtual Office</a></li>
+							<li><a href="">Co-working</a></li>
+							<li><a href="">Cafes</a></li>
+							<li><a href="">Training</a></li>
+						</ul>
+				</div>
+				<div class="col-md-3">
+					<h4 class="text-widget left">Top Citites</h4>
+						<ul>
+							<li><a href="">Meeting Room</a></li>
+							<li><a href="">Private Office</a></li>
+							<li><a href="">Co-working Space</a></li>
+							<li><a href="">Virtual Office</a></li>
+							<li><a href="">Co-working</a></li>
+							<li><a href="">Cafes</a></li>
+							<li><a href="">Training</a></li>
+						</ul>
+				</div>
+				<div class="col-md-3">
+					<h4 class="text-widget left">Explore</h4>
+						<ul>
+							<li><a href="">Meeting Room</a></li>
+							<li><a href="">Private Office</a></li>
+							<li><a href="">Co-working Space</a></li>
+							<li><a href="">Virtual Office</a></li>
+							<li><a href="">Co-working</a></li>
+							<li><a href="">Cafes</a></li>
+							<li><a href="">Training</a></li>
+						</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="list-inline footer-social">
 						<li><a href=""><img src="img/facebook (1).svg" alt=""></a></li>
 						<li><a href=""><img src="img/instagram.svg" alt=""></a></li>
 						<li><a href=""><img src="img/linkedin.svg" alt=""></a></li>
 						<li><a href=""><img src="img/twitter (1).svg" alt=""></a></li>
 					</ul>
-   			</div>
-   		</div>
-
-   		<ul class="list-inline spi fup">
-   			<li>Parkash Nagar, Delhi India </li><i>|</i>
-   			<li>Type: Meeting and Working Place </li><i>|</i>
-   			<li>Capacity: 20 People</li>
-   		</ul>
-   	</div>
-   </div>	
- </header>
-
-
-	<div class="content-area container">
-		<div class="row">
-			<div class="col-md-2">
-	        <aside class="sidebar-area" role="complementary">
-	            <nav class="side-navigation" role="navigation">
-	             <div class="m1 menu">
-	                 <div id="menu-center">
-	                     <ul>
-	                         <li><a class="active" href="#description">Description</a>
-
-	                         </li>
-	                         <li><a href="#facilities">Facilities</a>
-
-	                         </li>
-	                         <li><a href="#about">Timming</a>
-
-	                         </li>
-	                         <li><a href="#contact">Gallery</a></li>
-	                         <li><a href="#contact">Location</a></li>
-
-	                     </ul>
-	                 </div>
-	             </div>
-	            </nav><!-- #site-navigation -->
-	        </aside><!-- #secondary -->
-	        </div>
-	        <div class="col-md-10">
-	        	<main class="site-main" role="main">
-	       			
-	       			<article class="art-block" id="description" class="">
-	       				<h4 class="text-widget left">Description</h4>
-	       				<p class="read">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-	       			</article>
-
-	       			<article id="facilities" class="art-block">
-	       				<h4 class="text-widget left">Facilities</h4>
-	       				<ul class="facilities-icons-list list-inline">
-						      	<li>
-						      		<img src="img/wifi.svg" alt="">
-						      		Power Backup
-						      	</li>
-						      	<li>
-						      		<img src="img/plug.svg" alt="">
-						      		Wi-fi
-						      	</li>
-						      	<li>
-						      		<img src="img/wifi.svg" alt="">
-						      		Power Backup
-						      	</li>
-						      	
-
-						      	<li>
-						      		<img src="img/coffee-cup.svg" alt="">
-						      		Coffee
-						      	</li>
-						      	<li>
-						      		<img src="img/armchair.svg" alt="">
-						      		Lounge
-						      	</li>
-						      	<li>
-						      		<img src="img/wifi.svg" alt="">
-						      		Wifi
-						      	</li>
-						      		<li>
-						      		<img src="img/coffee-cup.svg" alt="">
-						      		Coffee
-						      	</li>
-						      	<li>
-						      		<img src="img/coffee-cup.svg" alt="">
-						      		Coffee
-						      	</li>
-						      	<li>
-						      		<img src="img/coffee-cup.svg" alt="">
-						      		Coffee
-						      	</li>
-						      	<li>
-						      		<img src="img/coffee-cup.svg" alt="">
-						      		Coffee
-						      	</li>
-						      	<li>
-						      		<img src="img/armchair.svg" alt="">
-						      		Lounge
-						      	</li>
-						      
-						      </ul>
-	       			</article>
-
-	       			<div id="about">
-	       				<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quasi, rerum recusandae excepturi dolore nam, consectetur eaque deserunt facere, quis, voluptatum ut aperiam amet minima unde natus molestiae placeat doloremque.</h1>
-	       				<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quasi, rerum recusandae excepturi dolore nam, consectetur eaque deserunt facere, quis, voluptatum ut aperiam amet minima unde natus molestiae placeat doloremque.</h1>
-	       				<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quasi, rerum recusandae excepturi dolore nam, consectetur eaque deserunt facere, quis, voluptatum ut aperiam amet minima unde natus molestiae placeat doloremque.</h1>
-	       				<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quasi, rerum recusandae excepturi dolore nam, consectetur eaque deserunt facere, quis, voluptatum ut aperiam amet minima unde natus molestiae placeat doloremque.</h1>
-	       			</div>
-	       			<div id="contact">
-	       				<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quasi, rerum recusandae excepturi dolore nam, consectetur eaque deserunt facere, quis, voluptatum ut aperiam amet minima unde natus molestiae placeat doloremque.</h1>
-	       				<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quasi, rerum recusandae excepturi dolore nam, consectetur eaque deserunt facere, quis, voluptatum ut aperiam amet minima unde natus molestiae placeat doloremque.</h1>
-	       				<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quasi, rerum recusandae excepturi dolore nam, consectetur eaque deserunt facere, quis, voluptatum ut aperiam amet minima unde natus molestiae placeat doloremque.</h1>
-	       				<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quasi, rerum recusandae excepturi dolore nam, consectetur eaque deserunt facere, quis, voluptatum ut aperiam amet minima unde natus molestiae placeat doloremque.</h1>
-	       			</div>
-	        	</main>
-	        </div>
-	   
-	        </div>
-	    </div>
-
-
-
-    <script src="js/jquery.js"></script>
+					<p class="lead">All Rights Reserved</p>
+					
+					
+					
+				</div>
+			</footer>
+		</div>
+	</div>
+</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script>
-
-	$(window).scroll(function () {
-		var fixSidebar = $('.site-header').innerHeight();
-		var contentHeight = $('.site-main').innerHeight();
-		var sidebarHeight = $('.side-navigation').height();
-	  var sidebarBottomPos = contentHeight - sidebarHeight; 
-	  var trigger = $(window).scrollTop() - fixSidebar;
-
-	      	if ($(window).scrollTop() >= fixSidebar) {
-	          	$('.side-navigation').addClass('fixed animated fadeInDown');
-	      	} else {
-	          	$('.side-navigation').removeClass('fixed animated fadeInDown');
-	      	}
-
-	      	if (trigger >= sidebarBottomPos) {
-	          	$('.side-navigation').addClass('bottom');
-	      	} else {
-	          	$('.side-navigation').removeClass('bottom');
-	      	}
-	});
-</script>
-<script>
-	$(document).ready(function () {
-	    $(document).on("scroll", onScroll);
-	    
-	    //smoothscroll
-	    $('a[href^="#"]').on('click', function (e) {
-	        e.preventDefault();
-	        $(document).off("scroll");
-	        
-	        $('a').each(function () {
-	            $(this).removeClass('active');
-	        })
-	        $(this).addClass('active');
-	      
-	        var target = this.hash,
-	            menu = target;
-	        $target = $(target);
-	        $('html, body').stop().animate({
-	            'scrollTop': $target.offset().top+2
-	        }, 500, 'swing', function () {
-	            window.location.hash = target;
-	            $(document).on("scroll", onScroll);
-	        });
-	    });
+	(function() {
+	$('select').each(function() {
+		$(this).hide();
+		makeElement($(this));
 	});
 
-	function onScroll(event){
-	    var scrollPos = $(document).scrollTop();
-	    $('#menu-center a').each(function () {
-	        var currLink = $(this);
-	        var refElement = $(currLink.attr("href"));
-	        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-	            $('#menu-center ul li a').removeClass("active");
-	            currLink.addClass("active");
-	        }
-	        else{
-	            currLink.removeClass("active");
-	        }
-	    });
+	function makeElement(select) {
+		var
+		$div = $('<div />', {class:'ui-select'}).insertAfter(select),
+		$nav = $('<span />').click(function() {
+			$(this).parent().toggleClass('open');
+		}).appendTo($div),
+		$el = $('<ul />').appendTo($div);
+		select.find('option').map(function(i) {
+			
+			var li = $('<li />').append($(this).text());
+				li.click(onSelect.bind($div, li, $(this).val(), select, $nav));
+			if($(this).attr('selected')) {
+				li.addClass('selected');
+			}
+			var delay = i * 100 + 'ms';
+			li.css({
+				'-webkit-transition-delay': delay,
+		        '-moz-transition-delay': delay,
+		        '-o-transition-delay': delay,
+		        'transition-delay': delay
+			});
+			$el.append(li);
+		});
+		var selected = $el.find('li.selected');
+			selected = selected.length ? selected.html() : $el.find('li:first-child').addClass('selected').html();
+		$nav.html(selected);
+		// addAnimateDelay($el);
 	}
+
+	function onSelect(li, value, select, $nav) {
+		this.removeClass('open');
+		li.addClass('selected').siblings().removeClass('selected');
+		select.val(value).trigger('change');
+		$nav.html(li.html());
+	}
+})();
+
+$('.toggle').click(function(e) {
+	$(this).toggleClass('active');
+   $(this).parents('.slider-dropdown').find('.slider-dropdown-menu').slideToggle()
+});
+
+$(function() {
+  $(".heart").on("click", function() {
+    $(this).toggleClass("is-active");
+  });
+});
+
 </script>
 </body>
 </html>
