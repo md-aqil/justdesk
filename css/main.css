@@ -806,13 +806,15 @@ color: #e00000 !important;
       margin-top: 20px;
     }
   .bottom-slider-panel {
-    padding: 25px 0;
+    padding: 30px 0;
     margin-bottom: 50px;
-  }
+    padding-bottom: 0;
+}
   .fup {
     position: relative;
     top: -40px;
     left: -10px;
+    margin-bottom: 0;
   }
   .spi  i {
     font-size: 20px;
@@ -934,4 +936,12 @@ color: #e00000 !important;
     padding: 10px;
     color: #fff;
     border-bottom-right-radius: 10px;
+}
+.bottom-slider-panel.for-top {
+  
+    margin-top: -20px;
+    margin-bottom: 22px;
+}
+.content-area {
+  margin-top: 60px;
 }
