@@ -1,0 +1,105 @@
+
+<footer class="container-fluid bg-gray spacethis">
+	<div class="row">
+		<div class="container">
+			<footer class="row justdesk-footer">
+				<div class="col-md-3">
+					<h4 class="text-widget left">Workplace Type</h4>
+						<ul>
+							<li><a href="">Meeting Room</a></li>
+							<li><a href="">Private Office</a></li>
+							<li><a href="">Co-working Space</a></li>
+							<li><a href="">Virtual Office</a></li>
+							<li><a href="">Co-working</a></li>
+							<li><a href="">Cafes</a></li>
+							<li><a href="">Training</a></li>
+						</ul>
+				</div>
+				<div class="col-md-3">
+					<h4 class="text-widget left">Top Citites</h4>
+						<ul>
+							<li><a href="">Meeting Room</a></li>
+							<li><a href="">Private Office</a></li>
+							<li><a href="">Co-working Space</a></li>
+							<li><a href="">Virtual Office</a></li>
+							<li><a href="">Co-working</a></li>
+							<li><a href="">Cafes</a></li>
+							<li><a href="">Training</a></li>
+						</ul>
+				</div>
+				<div class="col-md-3">
+					<h4 class="text-widget left">Explore</h4>
+						<ul>
+							<li><a href="">Meeting Room</a></li>
+							<li><a href="">Private Office</a></li>
+							<li><a href="">Co-working Space</a></li>
+							<li><a href="">Virtual Office</a></li>
+							<li><a href="">Co-working</a></li>
+							<li><a href="">Cafes</a></li>
+							<li><a href="">Training</a></li>
+						</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="list-inline footer-social">
+						<li><a href=""><img src="img/facebook (1).svg" alt=""></a></li>
+						<li><a href=""><img src="img/instagram.svg" alt=""></a></li>
+						<li><a href=""><img src="img/linkedin.svg" alt=""></a></li>
+						<li><a href=""><img src="img/twitter (1).svg" alt=""></a></li>
+					</ul>
+					<p class="lead">All Rights Reserved</p>
+					
+					
+					
+				</div>
+			</footer>
+		</div>
+	</div>
+</footer>
+
+ <script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/lightbox.min.js"></script>
+<script src="js/WOW.js"></script>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+
+<script>
+	w3.includeHTML();
+
+      new WOW().init();
+</script>
+<script>
+	window.onload = function () {
+    var fine = [36, 34, 34, 34];
+    var mitms = document.getElementsByClassName('mitm');
+    var l0 = (mitms[0].offsetLeft + fine[0]);
+    document.getElementById("nav_arrow").style.marginLeft = l0 + "px";
+    
+    for (var i = 0; i < mitms.length; i++) {
+        mitms[i].default = false;
+        mitms[i].fine = fine[i];
+        mitms[i].onmouseover = function () {arr(this);};
+        mitms[i].onmouseout = function () {
+            var tmp = document.getElementsByClassName('mitm');
+            for (var j=0; j<tmp.length; j++) {
+                if (tmp[j].default === true) {arr(tmp[j]); break;}
+            }
+        };
+        mitms[i].onclick = function() {
+            var tmp = document.getElementsByClassName('mitm');
+            for (var j=0; j<tmp.length; j++) {tmp[j].default = false;}
+            this.default = true;
+        }
+    }
+    mitms[0].default = true;
+};
+
+function arr(el) {
+    var mitms = document.getElementsByClassName('mitm');
+    var l = el.offsetLeft + el.fine;
+    document.getElementById("nav_arrow").style.marginLeft = l + "px";
+}
+
+
+</script>
+</body>
+</html>

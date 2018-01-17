@@ -8,6 +8,9 @@
 :root {
   --border-color:#ddd;
 }
+:root {
+  --dark-color:#8c8c8c;
+}
 .bg-gray {
 	background-color: #f2f2f2;
 }
@@ -656,6 +659,7 @@ color: #e00000 !important;
 .co-list .media-object {
     width: 280px;
     border-radius: 10px;
+    margin-right: 15px;
 }
 .avail-info {
   margin-left: 25px;
@@ -724,8 +728,11 @@ color: #e00000 !important;
   background: #777;
 }
 .day-facility img {
-  width: 30px;
+    width: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
+
 .day-facility {
   margin-top: 15px;
 }
@@ -742,7 +749,7 @@ color: #e00000 !important;
   background: var(--theme-color);
   color: #fff;
   /*padding: 6px 15px;*/
-  font-size: 18px;
+  font-size: 16px;
 }
 .btn-theme:hover {
   color: #fff;
@@ -751,7 +758,7 @@ color: #e00000 !important;
   border-radius: 20px;
 }
 .btn-dark {
-  background: #777;
+  background: var(--dark-color);
 }
 .pr0 {
   padding-right: 0;
@@ -913,4 +920,18 @@ color: #e00000 !important;
 }
 .justdesk-footer .text-widget  {
   font-size: 24px;
+}
+.co-list .media-left {
+  position: relative;
+}
+
+.verified{
+  position: absolute;
+    right: 25px;
+    bottom: 17px;
+    background: var(--theme-color);
+    display: inline-block;
+    padding: 10px;
+    color: #fff;
+    border-bottom-right-radius: 10px;
 }
