@@ -72,17 +72,17 @@
      				  <div class="col-md-6">
      				        <form class="navbar-form" role="search">
      				        	<div class="result-input-box">
-     						        <div class="input-group">
-     						        	 <span class="input-group-addon" id="basic-addon1">
-     			        			  	<select name="" id="" style="display: none;">
-     			        			  		<option value="">Select City</option>
-     			        			  		<option value="">Delhi</option>
-     			        			  	</select><div class="ui-select"><span>Select City</span><ul><li class="selected" style="transition-delay: 0ms;">Select City</li><li style="transition-delay: 100ms;">Delhi</li></ul></div>
-     			        			  </span>
+     						         <div class="input-group">
+					        	 <span class="input-group-addon" id="basic-addon1">
+		        			  	<select name="" id="" >
+		        			  		<option value="">Select City</option>
+		        			  		<option value="">Delhi</option>
+		        			  	</select>
+		        			  </span>
 
-     			        			  <input type="text" class="" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-     			        			  <button class="btn-search"><img width="25" src="img/search.svg" alt=""></button>
-     			        			</div>
+		        			  <input type="text" class="" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+		        			  <button class="btn-search"><img width="25" src="img/search.svg" alt=""></button>
+		        			</div>
      				        	</div>
      					      
      				        </form>
@@ -491,6 +491,62 @@ $('.carousel').carousel();
 	    });
 	}
 
+
+</script>
+<script>
+	(function() {
+	$('select').each(function() {
+		$(this).hide();
+		makeElement($(this));
+	});
+
+	function makeElement(select) {
+		var
+		$div = $('<div />', {class:'ui-select'}).insertAfter(select),
+		$nav = $('<span />').click(function() {
+			$(this).parent().toggleClass('open');
+		}).appendTo($div),
+		$el = $('<ul />').appendTo($div);
+		select.find('option').map(function(i) {
+			
+			var li = $('<li />').append($(this).text());
+				li.click(onSelect.bind($div, li, $(this).val(), select, $nav));
+			if($(this).attr('selected')) {
+				li.addClass('selected');
+			}
+			var delay = i * 100 + 'ms';
+			li.css({
+				'-webkit-transition-delay': delay,
+		        '-moz-transition-delay': delay,
+		        '-o-transition-delay': delay,
+		        'transition-delay': delay
+			});
+			$el.append(li);
+		});
+		var selected = $el.find('li.selected');
+			selected = selected.length ? selected.html() : $el.find('li:first-child').addClass('selected').html();
+		$nav.html(selected);
+		// addAnimateDelay($el);
+	}
+
+	function onSelect(li, value, select, $nav) {
+		this.removeClass('open');
+		li.addClass('selected').siblings().removeClass('selected');
+		select.val(value).trigger('change');
+		$nav.html(li.html());
+	}
+})();
+
+$('.toggle').click(function(e) {
+	$(this).toggleClass('active');
+   $(this).parents('.slider-dropdown').find('.slider-dropdown-menu').slideToggle()
+});
+
+$(function() {
+  $(".heart").on("click", function() {
+    $(this).toggleClass("is-active");
+  });
+});
 
 </script>
 </body>
