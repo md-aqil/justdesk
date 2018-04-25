@@ -40,7 +40,7 @@
 	margin-left: -15px;
 }
 .gallery-box img {
-	width: 200px;
+	width: 190px;
     margin: 15px;
     border-radius: 10px;
 }
@@ -50,6 +50,39 @@
 .googleMap {
 	width: 100%;
 	height: 500px;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+	border:none;
+	text-align: center;
+	font-weight: 300;
+}
+thead>tr>th {
+	color: #808080 !important;
+
+}
+.nav.nav-tabs {
+	display: flex;
+	
+}
+.nav-tabs>li {
+   
+    flex-grow: 1;
+    text-align: center;
+    margin-bottom: -2px;
+}
+.nav-tabs li a {
+    color: #333;
+    padding: 15px 0;
+    border-radius: 0;
+    
+}
+.card {
+	box-shadow: 0px 0px 7px 1px #0000004a;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+	border:none;
+	background: var(--theme-color);
+	color: #fff;
 }
 </style>
 </head>
@@ -68,7 +101,7 @@
      							<span class="icon-bar"></span>
      							<span class="icon-bar"></span>
      						</button>
-     						<h4><a class="navbar-brand" href="#">Brand</a></h4>
+     						<h4><a class="navbar-brand" href="index.html">Brand</a></h4>
      					</div>
      				  <div class="col-md-6">
      				        <form class="navbar-form" role="search">
@@ -103,7 +136,14 @@
      				</div>
      	</nav>
      </div>
- <div class="bottom-slider-panel bg-gray for-top">
+<div class="container-fluid">
+	<div class="row vewfull-img verified">
+		<img src="img/building-2559580_1920.jpg">
+	</div>
+	
+</div>
+  
+   <div class="bottom-slider-panel bg-gray">
 	   	<div class="container">
 	   		<div class="row">
 	   			<div class="col-md-5">
@@ -115,10 +155,10 @@
 			   			<li>Rs 1000/per month</li>
 			   		</ul>
 			   		<ul class="list-inline footer-social top-banner">
-							<li><a href=""><img src="img/facebook (1).svg" alt=""></a></li>
+							<li><a href=""><img src="img/facebook.svg" alt=""></a></li>
 							<li><a href=""><img src="img/instagram.svg" alt=""></a></li>
 							<li><a href=""><img src="img/linkedin.svg" alt=""></a></li>
-							<li><a href=""><img src="img/twitter (1).svg" alt=""></a></li>
+							<li><a href=""><img src="img/twitter.svg" alt=""></a></li>
 						</ul>
 	   			</div>
 	   		</div>
@@ -130,84 +170,6 @@
 	   		</ul>
 	   	</div>
    </div>	
-   <div id="myCarousel" class="carousel slide full-width" data-ride="carousel">
-	    
-	       <div class="carousel-inner">
-	         <div class="item active">
-	           <a href="#"><img src="img/space-desk-workspace-coworking.jpg" /></a>
-	           <div class="carousel-caption">
-	             <h3 class="animated flipInX">Meow</h3>
-	             <p>Just Kitten Around</p>
-	           </div>
-	         </div>
-	         <div class="item">
-	           <a href="#"><img src="img/building-2559580_1920.jpg" /></a>
-	           <div class="carousel-caption">
-	             <h3 class="animated flipInX">Meow</h3>
-	             <p>Just Kitten Around</p>
-	           </div>
-	         </div>
-	         <div class="item">
-	           <a href="#"><img src="img/business-people-1572059_1920.jpg" /></a>
-	           <div class="carousel-caption">
-	             <h3>Meow</h3>
-	             <p>Just Kitten Around</p>
-	           </div>
-	         </div>
-	         <div class="item">
-	           <a href="#"><img src="img/chairs-2181960_1920.jpg" /></a>
-	           <div class="carousel-caption">
-	             <h3>Meow</h3>
-	             <p>Just Kitten Around</p>
-	           </div>
-	         </div> 
-	         <div class="item">
-	           <a href="#"><img src="img/workstation-405768_1920.jpg" /></a>
-	           <div class="carousel-caption">
-	             <h3>Meow</h3>
-	             <p>Just Kitten Around</p>
-	           </div>
-	         </div>
-	       </div>
-
-	       <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-	        <span class="angle-icon">
-	         	<img class="left" src="img/angle.svg" alt="">
-	         </span>
-	       </a>
-	       <a class="right carousel-control" href="#myCarousel" data-slide="next">
-	         <span class="angle-icon">
-	         	<img class="right" src="img/angle.svg" alt="">
-	         </span>
-	       </a>
-    </div>
-  <!--  <div class="bottom-slider-panel bg-gray">
-	   	<div class="container">
-	   		<div class="row">
-	   			<div class="col-md-5">
-	   				<h2 class="m0">Workplace Co-working space</h2>
-	   			</div>
-	   			<div class="col-md-7 text-right text-theme">
-	   				<ul class="list-inline spi">
-			   			<li>Rs 1000/per day</li><i>|</i>
-			   			<li>Rs 1000/per month</li>
-			   		</ul>
-			   		<ul class="list-inline footer-social top-banner">
-							<li><a href=""><img src="img/facebook (1).svg" alt=""></a></li>
-							<li><a href=""><img src="img/instagram.svg" alt=""></a></li>
-							<li><a href=""><img src="img/linkedin.svg" alt=""></a></li>
-							<li><a href=""><img src="img/twitter (1).svg" alt=""></a></li>
-						</ul>
-	   			</div>
-	   		</div>
-
-	   		<ul class="list-inline spi fup">
-	   			<li>Parkash Nagar, Delhi India </li><i>|</i>
-	   			<li>Type: Meeting and Working Place </li><i>|</i>
-	   			<li>Capacity: 20 People</li>
-	   		</ul>
-	   	</div>
-   </div>	 -->
  </header>
 
 
@@ -230,6 +192,7 @@
 	                         </li>
 	                         <li><a href="#gallery">Gallery</a></li>
 	                         <li><a href="#location">Location</a></li>
+	                         <li><a href="#Membership">Membership</a></li>
 
 	                     </ul>
 	                 </div>
@@ -237,7 +200,7 @@
 	            </nav><!-- #site-navigation -->
 	        </aside><!-- #secondary -->
 	        </div>
-	        <div class="col-md-10">
+	        <div class="col-md-7">
 	        	<main class="site-main" role="main">
 	       			
 	       			<article class="art-block" id="description" class="">
@@ -361,11 +324,72 @@
 	       				<iframe class="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.0671765857483!2d77.21957981545445!3d28.62774869104741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd3441f6a259%3A0xb92a9b8c02fa7dd0!2sBigRadar!5e0!3m2!1sen!2sin!4v1516180184179" frameborder="0" style="border:0" allowfullscreen></iframe>
 						   
 	       			</article>
+	       			<article class="art-block" id="Membership">
+	       				<h4 class="text-widget left">Membership Fees</h4>
+
+
+
+                       <div class="card">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Hot Desk/Open Plan Seating</a></li>
+                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Dedicated Desk</a></li>
+                            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Private Office</a></li>
+                           
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="home">
+                            	<table class="table">
+                            		<tr>
+                            			<th>#People</th>
+                            			<th>Duration</th>
+                            			<th>Price</th>
+                            			<th>Access Hours</th>
+                            			<th>Availability</th>
+                            		</tr>
+                            		<tr class="bg-theme">
+                            			<td>1</td>
+                            			<td>1 Month</td>
+                            			<td>5000</td>
+                            			<td>9 to 5</td>
+                            			<td>Enquiry</td>
+                            		</tr>
+                            	</table>
+                            </div>
+                           
+                        </div>
+	       				</div>
+	       				                                
+	       			</article>
 	       		
 	        	</main>
 	        </div>
+
+	          <aside class="col-md-3">
+	        	<div class="thumbnail">
+				    <div class="caption">
+				       
+				        
+				    <a href="#" class="btn btn-theme btn-block" style="padding: 10px; " role="button">Book Now</a> 
+				    <a href="#" class="btn btn-white btn-block" style="padding: 10px; " role="button">Visit First</a> 
+				    <a href="#" class="btn btn-white btn-block" style="padding: 10px; " role="button">Message Us</a> 
+
+					 <ul class="list-inline footer-social text-center" style="margin-top: 20px;">
+						<li><a href=""><img src="img/facebook.svg" alt=""></a></li>
+						<li><a href=""><img src="img/instagram.svg" alt=""></a></li>
+						<li><a href=""><img src="img/linkedin.svg" alt=""></a></li>
+						<li><a href=""><img src="img/twitter.svg" alt=""></a></li>
+					</ul>
+				      </div>
+				    </div>
+	        </aside>
+
 	   
 	        </div>
+
+
+	      
 	    </div>
 
 
@@ -411,10 +435,10 @@
 				</div>
 				<div class="col-md-3">
 					<ul class="list-inline footer-social">
-						<li><a href=""><img src="img/facebook (1).svg" alt=""></a></li>
+						<li><a href=""><img src="img/facebook.svg" alt=""></a></li>
 						<li><a href=""><img src="img/instagram.svg" alt=""></a></li>
 						<li><a href=""><img src="img/linkedin.svg" alt=""></a></li>
-						<li><a href=""><img src="img/twitter (1).svg" alt=""></a></li>
+						<li><a href=""><img src="img/twitter.svg" alt=""></a></li>
 					</ul>
 					<p class="lead">All Rights Reserved</p>
 					
