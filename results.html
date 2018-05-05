@@ -486,6 +486,7 @@ $('.carousel').carousel();
 		var contentHeight = $('.site-main').innerHeight();
 		var sidebarHeight = $('.side-navigation').height();
 	  var sidebarBottomPos = contentHeight - sidebarHeight; 
+	  console.log(sidebarBottomPos);
 	  var trigger = $(window).scrollTop() - fixSidebar;
 
 	      	if ($(window).scrollTop() >= fixSidebar) {
